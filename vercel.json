@@ -1,0 +1,10 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/index.html" },
+      { "source": "/tv", "destination": "/tv.html" },
+      { "source": "/movies", "destination": "/peliculas.html" },
+      { "source": "/futbol", "destination": "/futbol.html" },
+      { "source": "/about", "destination": "/acercade.html" }
+    ],
+    "cleanUrls": true
+  }
