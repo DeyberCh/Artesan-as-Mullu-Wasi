@@ -1,17 +1,5 @@
-/**
-* Template Name: NiceShop
-* Template URL: https://bootstrapmade.com/niceshop-bootstrap-ecommerce-template/
-* Updated: Jul 25 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 @charset "UTF-8";
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -21,10 +9,10 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #252223; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #dfa26cd7; /* Background color for the entire website, including individual sections */
+  --default-color: #2a2a2a; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #cc214f; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #333333; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -2988,7 +2976,7 @@ section,
 }
 
 .cards .product-card .product-rating span {
-  color: #9e9e9e;
+  color: #444444;
   margin-left: 5px;
   font-size: 0.7rem;
 }
@@ -3006,7 +2994,7 @@ section,
 }
 
 .cards .product-card .product-price .old-price {
-  color: #9e9e9e;
+  color: #3e3e3e;
   text-decoration: line-through;
   font-size: 0.8rem;
 }
