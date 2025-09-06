@@ -1,10 +1,3 @@
-/**
-* Template Name: NiceShop
-* Template URL: https://bootstrapmade.com/niceshop-bootstrap-ecommerce-template/
-* Updated: Jul 25 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";
@@ -958,3 +951,24 @@
   });
 
 })();
+
+new Swiper('.hero-swiper', {
+  loop: true,
+  speed: 1000, // duración de la transición (1s)
+  autoplay: {
+    delay: 4000, // tiempo entre slides
+    disableOnInteraction: false,
+  },
+  effect: 'fade', // <<--- efecto de transición
+  fadeEffect: {
+    crossFade: true, // mezcla suave entre imágenes
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

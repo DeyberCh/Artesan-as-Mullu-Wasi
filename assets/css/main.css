@@ -12594,3 +12594,99 @@ section,
     justify-content: center;
   }
 }
+
+
+/* Contenedor del slider */
+.hero-swiper {
+  width: 100%;
+  max-width: 1440px; /* opcional para no estirarse demasiado en pantallas grandes */
+  margin: 0 auto; /* centrar */
+  overflow: hidden;
+  border-radius: 12px; /* opcional, bordes redondeados */
+}
+
+/* Cada slide ocupa el mismo tamaño */
+.hero-swiper article {
+  position: relative;
+  width: 100%;
+  height: 500px; /* altura fija en PC */
+}
+
+.hero-swiper article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* asegura que no se deforme */
+}
+
+/* Títulos del slider */
+.hero-swiper .inner {
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+  color: #fff;
+  text-shadow: 0 2px 8px #000000;
+  max-width: 80%;
+}
+
+.hero-swiper .inner h2 {
+  color: #ffffff; /* ejemplo: naranja */
+  font-size: 2.7rem;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive; /* ejemplo con fuente distinta */
+  margin: 0;
+}
+
+.hero-swiper .inner p {
+  font-size: 1.5rem;
+  font-family: 'Great Vibes', cursive;
+  margin-bottom: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* color del ícono */
+  background: rgba(0,0,0,0.4); /* fondo oscuro transparente */
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px; /* tamaño del ícono */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #30b668; /* cambia el fondo en hover */
+  color: #fff;
+}
+
+
+/* ---- Responsive ---- */
+@media (max-width: 992px) {
+  .hero-swiper article {
+    height: 350px; /* tablets */
+  }
+  .hero-swiper .inner h2 {
+    font-size: 2rem;
+  }
+  .hero-swiper .inner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-swiper article {
+    height: 220px; /* móviles */
+  }
+  .hero-swiper .inner h2 {
+    font-size: 1.3rem;
+  }
+  .hero-swiper .inner p {
+    font-size: 0.9rem;
+  }
+}
